@@ -1,0 +1,16 @@
+{
+  "name": "task-manager-api",
+  "version": "1.0.0",
+  "description": "A REST API for managing tasks, built with Node.js and Express, with a simple frontend client.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["nodejs", "express", "rest-api", "crud", "task-manager"],
+  "author": "Prajith Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  }
+}
