@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Manager — REST API Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="brand">task<span>@</span>manager</div>
+    <div class="api-badge mono">REST API · Node.js + Express</div>
+  </header>
+
+  <p class="lede">A CRUD task manager backed by a REST API. Every action below calls a real endpoint — <span class="mono">GET</span>, <span class="mono">POST</span>, <span class="mono">PUT</span>, and <span class="mono">DELETE</span> on <span class="mono">/api/tasks</span>.</p>
+
+  <form id="task-form">
+    <input type="text" id="title" placeholder="Task title" required maxlength="80">
+    <input type="text" id="description" placeholder="Description (optional)" maxlength="140">
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium" selected>Medium</option>
+      <option value="high">High</option>
+    </select>
+    <button type="submit" class="btn-primary">+ Add task</button>
+  </form>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="active">Active</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+  </div>
+
+  <ul id="task-list"></ul>
+
+  <div id="empty-state" class="empty-state" hidden>No tasks yet — add one above.</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+        </html>
